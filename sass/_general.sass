@@ -36,32 +36,12 @@ nav
     display: none
 
 .subheader
-    height: 84px
-    background-color: rgba(0, 0, 0, 0.6)
-    position: absolute
-    width: 100%
-    margin-top: 50px
-    &_logo
-      display: block
-      max-width: 100%
-      margin-top: 17px
-
-    &_official
-      font-weight: 200
-      font-size: 13px
-      color: #FFFFFF
-      opacity: .5
-      margin-top: 4px
-
-
-.subheader_call
-  font-weight: 300
-  font-size: 12px
-  text-align: right
-  color: #FFFFFF
-  margin-top: 23px
-
-  + a
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+  position: absolute
+  width: 100%
+  margin-top: 50px
+  &_ref
     display: block
     font-style: normal
     font-weight: normal
@@ -73,6 +53,32 @@ nav
     text-decoration: none
     cursor: pointer
     margin-top: 7px
+    &:hover
+      color: $blue
+
+  &_logo
+    display: block
+    max-width: 100%
+    margin-top: 17px
+
+  &_official
+    font-weight: 200
+    font-size: 13px
+    color: #FFFFFF
+    opacity: .5
+    margin-top: 4px
+  &_small
+    display: none
+
+
+.subheader_call
+  font-weight: 300
+  font-size: 12px
+  text-align: right
+  color: #FFFFFF
+  margin-top: 23px
+
+
 
 .subheader_btn, .btn
   width: 172px
