@@ -84,8 +84,10 @@
             padding-right: 0
             border: none
             margin: 10px 0
-            text-align: center;
+            text-align: center
+            width: 100%
         &_link
+            display: block
             font-size: 20px
     .hamburger
         display: block
@@ -172,7 +174,16 @@
             flex-direction: row
             width: 85%
             margin-top: 15px
-
+    .btn
+        &:hover
+            background: linear-gradient(0deg, $blue 0%, #4CE2FF 100%)
+            box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+            color: #FFFFFF
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+@media (max-width: 450px)
+    .menu
+        &_active
+            width: 85%
 @media (max-width: 360px)
     .footer
         &_link
@@ -183,3 +194,4 @@
                     font-size: 13px
             &_subtitle
                 justify-content: center
+    
